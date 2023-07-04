@@ -5,7 +5,7 @@ const Card = ({data}) => {
   return (
     <>
       <article>
-        <img src={`"${data.url}"`} alt={data.name}/>
+        <img src={data.url} alt={data.name}/>
         <h2>{data.name}</h2>
         <p>{data.email}</p>
         <p>{data.age}</p>
