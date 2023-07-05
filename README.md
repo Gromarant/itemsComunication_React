@@ -1,6 +1,8 @@
 # itemsComunication_React
 
-This is an overview of a project that involves creating a form with various fields, implementing communication between different components in React, and displaying the data received from the form. 
+This is an overview of a project that involves creating a form with various fields, implementing communication between different components in React, and displaying the data received from the form. [Try the app](https://itemscomunication.netlify.app/)
+
+[See repository](https://github.com/Gromarant/itemsComunication_React)
 
 The project requires the following components:
 
