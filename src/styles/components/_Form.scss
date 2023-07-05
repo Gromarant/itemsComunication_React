@@ -1,0 +1,49 @@
+@import '../utils/mixins.scss';
+@import '../utils/variables.scss';
+
+
+.form {
+  font-size: 1.6rem;
+  background-color: #15172b;
+  border-radius: 2rem;
+  padding: 2rem;
+  min-width: 32rem;
+  max-width: 54rem;
+  width: 80%;
+  margin: auto;
+
+  @include flexCol;
+
+  input {
+    background-color: #303245;
+    border-radius: 1rem;
+    color: #eee;
+    font-size: 1.8rem;
+    height: 3.8rem;
+    padding: 0.4rem 2rem 0;
+    width: 100%;
+  }
+
+  .placeholder {
+    color: #e5e5ec;
+    font-size: 2rem;
+  }
+  
+  .submit {
+    background-color: #37a957c0;
+    border-radius: 1rem;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    height: 5rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .submit:active {
+    background-color: #238f42;
+  }
+}

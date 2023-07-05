@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import Head from './Head/Head'
-import { EmailContext } from './context/EmailContext'
+import Main from './components/Main';
+import { EmailContext } from '../src/context/EmailContext'
 
 function App() {
   const [ email, setEmail ] = useState("")
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <EmailContext.Provider value={{email, setEmail}} >
-        <Head />
+        <Main />
       </EmailContext.Provider>
     </>
   )

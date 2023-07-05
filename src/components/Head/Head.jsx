@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import { EmailContext } from '../context/EmailContext';
+import { EmailContext } from '../../context/EmailContext';
 import Card from './Card';
 import Form from './Form';
 
@@ -9,9 +9,11 @@ const Head = () => {
 
   return (
     <>
-      <h3>{email}</h3>
+      <header>
+        <h3>{email}</h3>
+      </header>
       <Form setData={setData} />
-      <Card data={data} />
+      {data !== {} ? <Card data={data} /> : {}}
     </>
   );
 };

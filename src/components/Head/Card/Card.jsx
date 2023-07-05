@@ -4,11 +4,11 @@ const Card = ({data}) => {
 
   return (
     <>
-      <article>
+      <article className='card'>
         <img src={data.url} alt={data.name}/>
         <h2>{data.name}</h2>
-        <p>{data.email}</p>
-        <p>{data.age}</p>
+        <p><span>{data.email}</span></p>
+        <p>Edad: <span>{data.age}</span></p>
       </article>
     </>
   );

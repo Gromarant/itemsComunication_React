@@ -1,0 +1,10 @@
+@mixin flexCol{
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin media-up($breakpoint) {
+  @media screen and ( min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
