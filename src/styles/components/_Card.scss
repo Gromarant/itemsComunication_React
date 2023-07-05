@@ -1,6 +1,11 @@
 @import '../utils/mixins.scss';
 @import '../utils/variables.scss';
 
+
+.hidden{
+  visibility: hidden;
+}
+
 .card{
   place-items: center;
   gap: 1.4rem;
@@ -9,6 +14,7 @@
   font-size: 1.6rem;
   border-radius: 1rem;
   min-width: 20rem;
+  min-height: 15rem;
   margin: auto;
   margin-top: 3rem;
   width: 70%;

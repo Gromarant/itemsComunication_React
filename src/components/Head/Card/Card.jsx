@@ -8,7 +8,7 @@ const Card = ({data}) => {
         <img src={data.url} alt={data.name}/>
         <h2>{data.name}</h2>
         <p><span>{data.email}</span></p>
-        <p>Edad: <span>{data.age}</span></p>
+        {data.age? <p>Edad: <span>{data.age}</span></p> : <p><span>{data.age}</span></p>}
       </article>
     </>
   );

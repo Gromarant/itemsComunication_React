@@ -13,7 +13,7 @@ const Head = () => {
         <h3>{email}</h3>
       </header>
       <Form setData={setData} />
-      {data !== {} ? <Card data={data} /> : {}}
+      <Card data={data} />
     </>
   );
 };
